@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="css/form.css">
+  </head>
+  <body>
+    <h2>Task - 2</h2>
+    <div class="container">
+      <form id="form" action="details.php" onsubmit="return validate()" method="GET">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="phone">Phone:</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="phone" name="phone" minlength="10" maxlength="10" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-Mail:</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" required="required">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <input type="submit" value="Submit"ss>
+                </div>
+                <div class="col-75">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+  <script src="js/script.js" defer></script>
+
+  </body>
+</html>
